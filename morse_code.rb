@@ -50,6 +50,8 @@ def morse_word(str)
   result
 end
 
+puts morse_word('-- -.--')
+
 def morse_phrase(str)
   result = ''
   str.split('   ').each do |n|
