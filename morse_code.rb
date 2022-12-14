@@ -42,6 +42,8 @@ def morse_letter(letter)
   MORSE_CODE_LETTERS[letter]
 end
 
+puts morse_letter('.-')
+
 def morse_word(str)
   result = ''
   str.split.each { |n| result.concat(MORSE_CODE_LETTERS[n]) }
