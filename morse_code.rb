@@ -44,7 +44,7 @@ end
 
 def morse_word(str)
   result = ''
-  str.split.each{ |n| result.concat(MORSE_CODE_LETTERS[n]) }
+  str.split.each { |n| result.concat(MORSE_CODE_LETTERS[n]) }
   result
 end
 
@@ -54,6 +54,5 @@ def morse_phrase(str)
     result.concat(morse_word(n))
     result.concat(' ')
   end
-  resulta = result.strip
-  resulta
+  result.strip
 end
