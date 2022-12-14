@@ -1,4 +1,4 @@
-MorseCodeLetters = {
+MORSE_CODE_LETTERS = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
@@ -36,24 +36,24 @@ MorseCodeLetters = {
   '----.' => '9',
   '-----' => '0',
   '/' => ' '
-}
+}.freeze
 
-def morse_letter(n)
-  MorseCodeLetters[n]
+def morse_letter(letter)
+  MORSE_CODE_LETTERS[letter]
 end
 
 def morse_word(str)
   result = ''
-  str.split().each{ |n| result.concat(MorseCodeLetters[n]) }
+  str.split.each{ |n| result.concat(MORSE_CODE_LETTERS[n]) }
   result
 end
 
-def morse_phrase (str)
+def morse_phrase(str)
   result = ''
-  str1 = str.split('   ').each do |n| 
+  str.split('   ').each do |n|
     result.concat(morse_word(n))
     result.concat(' ')
   end
-  result = result.strip
-  result
+  resulta = result.strip
+  resulta
 end
