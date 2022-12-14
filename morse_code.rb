@@ -62,3 +62,5 @@ def morse_phrase(str)
 end
 
 puts morse_phrase('-- -.--   -. .- -- .')
+
+puts morse_phrase('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
